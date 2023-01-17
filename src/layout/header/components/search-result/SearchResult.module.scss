@@ -1,0 +1,14 @@
+@use 'src/assets/global' as i;
+.search_result{
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  display: flex;
+  min-height: 75px;
+  border-radius: .5rem;
+  color: i.$secondary-color;
+  background-color: #FFFFFF;
+  box-shadow: i.$shadow-color;
+  padding: 2rem;
+  z-index: 99;
+}

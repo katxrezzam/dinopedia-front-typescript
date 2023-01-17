@@ -1,0 +1,48 @@
+@use 'src/assets/global' as g;
+.dialog{
+  padding: 2rem 3rem;
+  background-color: g.$bg-color;
+  max-width: 1200px;
+  min-height: 450px;
+  border-radius: .5rem;
+  box-shadow: g.$shadow-color;
+  position: relative;
+  .dialog_title{
+    margin-bottom: 2rem;
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .dialog_content{
+    p{
+      font-size: 1.3rem;
+    }
+    .dialog_img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 25rem;
+      }
+    }
+  }
+  .close{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: g.$extra-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 1rem;
+    top: 1rem;
+    svg{
+      font-size: 1.5rem;
+    }
+    &:hover{
+      background-color: g.$hover-color;
+      cursor: pointer;
+    }
+  }
+}

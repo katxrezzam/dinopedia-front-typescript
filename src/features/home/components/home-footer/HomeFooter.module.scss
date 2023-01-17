@@ -1,0 +1,26 @@
+@use 'src/assets/global' as g;
+.home_footer{
+  background-color: g.$secondary-color;
+  padding: 3rem 0;
+  .footer_info{
+    display: flex;
+    justify-content: space-between;
+  }
+  .info_list{
+    line-height: 2.5rem;
+  }
+  .brand_name{
+    margin-bottom: 1.2rem;
+  }
+  .info{
+    line-height: 1.3rem;
+    p{
+      font: {
+        size: .9rem;
+        style: italic;
+        weight: lighter;
+      }
+      text-align: end;
+    }
+  }
+}

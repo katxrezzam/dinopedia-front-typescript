@@ -1,0 +1,11 @@
+.home_concept{
+  margin: 2rem 0;
+  .row_concept{
+    width: 100%;
+  }
+}
+@media (min-width: 1300px) {
+  .row_concept{
+    display: flex;
+  }
+}

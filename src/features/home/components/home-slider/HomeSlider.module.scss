@@ -1,0 +1,67 @@
+@use 'src/assets/global' as g;
+.home_slider{
+  padding: 2rem 0;
+  background: g.$primary-color;
+  .button_field{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    button{
+      width: 300px;
+      height: 50px;
+      background: none;
+      border: .2rem solid white;
+      font-size: 1.2rem;
+      transition: g.$tran-04;
+      &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+  .dino_grid{
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider_text{
+    padding: 3rem 0;
+    h1{
+      font-size: 3rem;
+      text-align: center;
+    }
+    .content{
+      margin: 3rem 0;
+      p{
+        text-align: justify;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .dino_row{
+    width: 13260px;
+    animation-duration: 165s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: animate_left;
+    opacity: 1;
+  }
+  .animation{
+    animation-direction: normal;
+  }
+  .animation_reverse{
+    animation-direction: reverse;
+  }
+}
+@keyframes animate_left {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,14 @@
+@use 'src/assets/global' as i;
+$width: calc( 100% - 250px);
+$height: calc(100% - 82px );
+.main{
+  position: relative;
+  left: 250px;
+  width: $width;
+  height: $height;
+  transition: i.$tran-04;
+}
+.main.close{
+  left: 88px;
+  width: calc(100% - 88px);
+}

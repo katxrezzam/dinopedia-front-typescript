@@ -1,0 +1,17 @@
+@use 'src/assets/global' as i;
+.search_input{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background-color: i.$bg-color;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.x_mark{
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+@use 'src/assets/global' as g;
+.home_header{
+  padding: 3rem 0;
+  .dino_info, .dino_card{
+    width: 100%;
+  }
+  .dino_title{
+    h1{
+      font-size: 3.5rem;
+      font-weight: bolder;
+    }
+  }
+  .dino_content{
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2.5rem;
+  }
+  .dino_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    height: 19rem;
+    background-color: g.$bg-color;
+    border-radius: 50%;
+    box-shadow: g.$shadow-color;
+  }
+}
+@media (min-width: 1300px) {
+  .dino_info, .dino_card{
+    width: calc( 100% / 2);
+  }
+}
+@media (max-width: 1300px) {
+  .dino_card{
+    margin-top: 5rem;
+  }
+  .dino_title{
+    h1{
+      text-align: center;
+    }
+  }
+}
