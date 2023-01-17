@@ -1,0 +1,15 @@
+.dinosaurs_grid{
+  .dinosaurs_filter{
+    width: 100%;
+    display: flex;
+    border: 1px solid white;
+  }
+  .filter_field{
+    width: calc(100% / 3);
+    margin: 1rem;
+    height: 42px;
+  }
+  .grid{
+
+  }
+}
