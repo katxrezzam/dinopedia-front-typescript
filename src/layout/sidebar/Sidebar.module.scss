@@ -1,15 +1,14 @@
-@use 'src/assets/global' as g;
 .sidebar{
   position: fixed;
   left: 0;
   top: 0;
   width: 250px;
   height: 100%;
-  background-color: g.$bg-color;
-  box-shadow: g.$shadow-color;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow-color);
   padding: 1.5rem 1rem;
   z-index: 100;
-  transition: g.$tran-05;
+  transition: var(--tran-05);
   header{
     display: flex;
     align-items: center;
@@ -44,11 +43,11 @@
     width: 30px;
     height: 30px;
     font-size: 1.5rem;
-    background-color: g.$extra-color2;
+    background-color: var(--extra-color2);
     border-radius: 50%;
     &:hover{
       cursor: pointer;
-      background-color: g.$hover-color;
+      background-color: var(--hover-color);
     }
   }
 }

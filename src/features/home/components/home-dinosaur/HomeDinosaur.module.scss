@@ -1,7 +1,6 @@
-@use 'src/assets/global' as g;
-.home_slider{
+.home_dinosaur{
   padding: 2rem 0;
-  background: g.$primary-color;
+  background: var(--primary-color);
   .button_field{
     display: flex;
     justify-content: center;
@@ -12,7 +11,7 @@
       background: none;
       border: .2rem solid white;
       font-size: 1.2rem;
-      transition: g.$tran-04;
+      transition: var(--tran-04);
       &:hover{
         transform: scale(1.1);
         cursor: pointer;

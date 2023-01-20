@@ -1,0 +1,83 @@
+.home_paleontology{
+  padding-top: 2rem;
+  background-color: var(--primary-color);
+  .paleontology_info{
+    padding: 2rem 0;
+    h1{
+      font: {
+        size: 3.5rem;
+        weight: bolder;
+      };
+    }
+  }
+  .paleontology_pictures{
+    position: relative;
+  }
+  .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
+@media (min-width: 1300px) {
+  .paleontology_info, .paleontology_pictures{
+    width: calc( 100% / 2);
+  }
+  .paleontology_info{
+    text-align: end;
+  }
+  .paleontology_pictures{
+    min-height: 600px;
+  }
+  .paleontology_content{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  p{
+    padding-left: 2rem;
+  }
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      border: 1rem  solid var(--bg2-color);
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .circle{
+   span{
+     border: .5rem solid var(--bg2-color);
+     width: calc(100% - 2rem);
+   }
+  }
+  .paleontology_pictures{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+  }
+  .paleontology_info{
+    text-align: center;
+  }
+}

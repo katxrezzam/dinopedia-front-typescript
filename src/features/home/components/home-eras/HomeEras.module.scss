@@ -1,0 +1,27 @@
+.home_eras{
+  .eras_info{
+    text-align: center;
+    padding: 2rem 0;
+    h1{
+      font-size: 3.5rem;
+    }
+  }
+  .text{
+    p{
+      margin: 2rem 0;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-align: center;
+    }
+  }
+  .eras_picture{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bigger{
+    width: 500px;
+    height: 500px;
+  }
+}

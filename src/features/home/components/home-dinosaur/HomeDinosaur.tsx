@@ -1,8 +1,8 @@
-import styles from './HomeSlider.module.scss'
+import styles from './HomeDinosaur.module.scss'
 import DinoCard from "../dino-card/DinoCard";
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
-const HomeSlider = () => {
+const HomeDinosaur = () => {
 
   const [array, setArray] = useState<any[]>([])
   const navigate = useNavigate()
@@ -16,7 +16,7 @@ const HomeSlider = () => {
   }, [])
 
   return(
-    <section className={styles.home_slider}>
+    <section className={styles.home_dinosaur}>
       <div className="width-wrapper">
         <div className={styles.slider_text}>
           <div className={styles.title}>
@@ -61,4 +61,4 @@ const HomeSlider = () => {
     </section>
   )
 }
-export default HomeSlider
+export default HomeDinosaur

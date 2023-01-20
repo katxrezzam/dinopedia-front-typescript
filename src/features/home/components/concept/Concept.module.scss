@@ -1,9 +1,8 @@
-@use 'src/assets/global' as g;
 .concept{
   position: relative;
   padding: 1.5rem;
   height: 20rem;
-  background-color: g.$bg-color;
+  background-color: var(--bg-color);
   border-radius: .5rem;
   .content_concept{
     padding: 0.5rem;
@@ -21,18 +20,18 @@
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: g.$extra-color;
+    background: var(--extra-color);
     border-radius: 50%;
     position: absolute;
     bottom: -10%;
     right: 50%;
     transform: translateX(50%);
-    transition: g.$tran-03;
+    transition: var(--tran-03);
     svg{
       font-size: 1.5rem;
     }
     &:hover{
-      background-color: g.$hover-color;
+      background-color: var(--hover-color);
       cursor: pointer;
     }
   }

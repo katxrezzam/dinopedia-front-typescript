@@ -1,6 +1,5 @@
-@use 'src/assets/global' as g;
 .overlay{
-  background-color: g.$overlay-color;
+  background-color: var(--overlay-color);
   position: fixed;
   top: 0;
   left: 0;

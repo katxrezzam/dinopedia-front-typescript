@@ -1,6 +1,5 @@
-@use 'src/assets/global' as g;
 .home_footer{
-  background-color: g.$secondary-color;
+  background-color: var(--secondary-color);
   padding: 3rem 0;
   .footer_info{
     display: flex;

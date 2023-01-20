@@ -1,16 +1,19 @@
 import {
   HomeHeader,
   HomeConcept,
-  HomeSlider,
-  HomeFooter
+  HomeDinosaur,
+  HomeFooter,
+  HomePaleontology,
+  HomeEras
 } from "../features/home";
 
 const Home = () => {
   return(
     <div className={'home'}>
       <HomeHeader/>
-      <HomeConcept/>
-      <HomeSlider/>
+      <HomePaleontology/>
+      <HomeEras/>
+      <HomeDinosaur/>
       <HomeFooter/>
     </div>
   )

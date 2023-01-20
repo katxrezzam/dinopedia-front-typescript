@@ -1,0 +1,83 @@
+:root{
+  --primary-color: #1E1B20;
+  --secondary-color: #000000;
+  --extra-color: #2C303A;
+  --extra-color2: #444857;
+  --hover-color: #3C91E6;
+  --bg2-color: #9FD356;
+  --bg-color: #131417;
+  --overlay-color: rgba(0, 0, 0, .5);
+  --font-base: 'Poppins';
+  --font-color: #FFFFFF;
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+  --shadow-color: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body{
+  position: relative;
+  background-color: var(--bg2-color);
+  min-height: 100vh;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font-color);
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto, sans-serif;
+  outline: none;
+}
+
+p{
+  text-align: justify;
+}
+.off-scream{
+  display: none;
+}
+.width-wrapper{
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+.open{
+  background-color: var(--hover-color) !important;
+}
+.close{
+  width: 88px;
+}
+.left, .right, .bellow{
+  width: 230px;
+  height: 230px;
+}
+
+@media (min-width: 1300px) {
+  .left, .right ,.bellow{
+    position: absolute;
+  }
+  .right{
+    top: 40px;
+    right: 20px;
+  }
+  .left{
+    top: 40px;
+    left: 20px;
+  }
+  .bellow{
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 1300px) {
+  .left, .right, .bellow{
+    z-index: 1;
+  }
+}

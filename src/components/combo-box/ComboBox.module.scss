@@ -1,4 +1,3 @@
-@use 'src/assets/global' as g;
 .combo_box{
   display: flex;
   justify-content: space-between;
@@ -7,14 +6,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: g.$bg-color;
+  background-color: var(--bg-color);
   border-radius: .5rem;
-  box-shadow: g.$shadow-color;
+  box-shadow: var(--shadow-color);
   user-select: none;
   cursor: pointer;
   .value{
     font: {
-      size: 1.3rem;
+      size: 1.1rem;
     };
   }
   .options{
@@ -22,9 +21,9 @@
     position: absolute;
     top: 45px;
     left: 0;
-    background-color: g.$bg-color;
+    background-color: var(--bg-color);
     min-height: 50px;
-    box-shadow: g.$shadow-color;
+    box-shadow: var(--shadow-color);
     line-height: 2rem;
     border-bottom: {
       left-radius: .5rem;
@@ -33,7 +32,7 @@
     li{
       padding: 0 1rem;
       &:hover{
-        background-color: g.$hover-color;
+        background-color: var(--hover-color);
         cursor: pointer;
       }
     }

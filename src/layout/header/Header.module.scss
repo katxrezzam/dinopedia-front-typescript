@@ -1,17 +1,16 @@
-@use 'src/assets/global' as i;
 .header{
   position: relative;
   left: 250px;
   width: calc(100% - 250px);
-  transition: i.$tran-05;
+  transition: var(--tran-05);
   padding: 1rem 2rem;
   .search_box{
     position: relative;
     display: flex;
     height: 50px;
-    background-color: i.$bg-color;
+    background-color: var(--bg-color);
     border-radius: 6px;
-    box-shadow: i.$shadow-color;
+    box-shadow: var(--shadow-color);
   }
   .icon{
     display: flex;
@@ -25,7 +24,7 @@
     }
     &:hover{
       cursor: pointer;
-      background-color: i.$hover-color;
+      background-color: var(--hover-color);
     }
   }
 }

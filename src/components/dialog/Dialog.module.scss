@@ -1,11 +1,10 @@
-@use 'src/assets/global' as g;
 .dialog{
   padding: 2rem 3rem;
-  background-color: g.$bg-color;
+  background-color: var(--bg-color);
   max-width: 1200px;
   min-height: 450px;
   border-radius: .5rem;
-  box-shadow: g.$shadow-color;
+  box-shadow: var(--shadow-color);
   position: relative;
   .dialog_title{
     margin-bottom: 2rem;
@@ -30,7 +29,7 @@
     position: absolute;
     width: 2rem;
     height: 2rem;
-    background-color: g.$extra-color;
+    background-color: var(--extra-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +40,7 @@
       font-size: 1.5rem;
     }
     &:hover{
-      background-color: g.$hover-color;
+      background-color: var(--hover-color);
       cursor: pointer;
     }
   }

@@ -1,9 +1,8 @@
-@use 'src/assets/global' as i;
 .search_input{
   height: 100%;
   width: 100%;
   border-radius: 6px;
-  background-color: i.$bg-color;
+  background-color: var(--bg-color);
   padding: 1rem;
   font-size: 1.3rem;
 }
