@@ -1,5 +1,6 @@
 import styles from './HomeEras.module.scss'
 import Picture from "../picture/Picture";
+import ButtonSection from "../../../../components/button/button-section/ButtonSection";
 const HomeEras = () => {
   return(
     <section className={styles.home_eras}>
@@ -16,6 +17,7 @@ const HomeEras = () => {
                 soluta.
               </p>
             </div>
+            <ButtonSection path={'/eras'} label={'EXPLORA'}/>
           </div>
           <div className={styles.eras_picture}>
             <Picture className={styles.bigger}/>

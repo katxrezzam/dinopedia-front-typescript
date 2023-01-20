@@ -2,6 +2,7 @@ import styles from './HomeDinosaur.module.scss'
 import DinoCard from "../dino-card/DinoCard";
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
+import ButtonSection from "../../../../components/button/button-section/ButtonSection";
 const HomeDinosaur = () => {
 
   const [array, setArray] = useState<any[]>([])
@@ -31,9 +32,7 @@ const HomeDinosaur = () => {
           </div>
         </div>
         <div className={styles.button_field}>
-          <button onClick={() => navigate('/dinosaurs')}>
-            VER TODOS
-          </button>
+          <ButtonSection path={'/dinosaurs'} label={'VER TODOS'}/>
         </div>
         <div className={styles.dino_grid}>
           <div className={`${styles.dino_row} ${styles.animation}`}>

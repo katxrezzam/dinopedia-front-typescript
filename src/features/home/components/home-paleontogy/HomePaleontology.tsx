@@ -1,5 +1,6 @@
 import styles from './HomePaleontology.module.scss'
 import Picture from "../picture/Picture";
+import ButtonSection from "../../../../components/button/button-section/ButtonSection";
 const HomePaleontology = () => {
   return(
     <section className={styles.home_paleontology}>
@@ -13,6 +14,9 @@ const HomePaleontology = () => {
                 ducimus eos excepturi expedita impedit in ipsam minus modi natus neque odit possimus reiciendis totam,
                 vel voluptates.
               </p>
+            </div>
+            <div className={styles.button_field}>
+              <ButtonSection path={'/paleontology'} label={'APRENDE'}/>
             </div>
           </div>
           <div className={styles.paleontology_pictures}>
