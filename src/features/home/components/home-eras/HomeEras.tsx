@@ -1,6 +1,6 @@
 import styles from './HomeEras.module.scss'
 import Picture from "../picture/Picture";
-import ButtonSection from "../../../../components/button/button-section/ButtonSection";
+import {ButtonSection} from "../../../../components/index";
 const HomeEras = () => {
   return(
     <section className={styles.home_eras}>

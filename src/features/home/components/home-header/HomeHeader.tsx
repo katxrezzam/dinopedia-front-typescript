@@ -1,5 +1,6 @@
 import styles from './HomeHeader.module.scss'
 import Picture from "../picture/Picture";
+import Scene from '../../../../components/scene/Scene';
 const HomeHeader = () => {
   return(
     <section className={styles.home_header}>
@@ -18,7 +19,9 @@ const HomeHeader = () => {
             </div>
           </div>
           <div className={styles.dino_card}>
-            <Picture className={styles.width}/>
+            <Picture className={styles.width}>
+              <Scene/>
+            </Picture>
           </div>
         </div>
       </div>

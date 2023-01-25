@@ -1,15 +1,35 @@
 .dinosaurs_grid{
   .dinosaurs_filter{
     width: 100%;
-    display: flex;
-    border: 1px solid white;
+    background-color: var(--extra-color);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
   }
-  .filter_field{
-    width: calc(100% / 3);
+  .input_field, .buttons_field{
+    height: 50px;
     margin: 1rem;
-    height: 42px;
   }
-  .grid{
-
+  .buttons_field{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    div{
+      display: flex;
+    }
+  }
+}
+@media (min-width: 1300px) {
+  .field_wide{
+    grid-column: span 4 /auto !important;
+  }
+}
+@media (min-width: 761px) {
+  .field_wide{
+    grid-column: span 2 /auto;
   }
 }

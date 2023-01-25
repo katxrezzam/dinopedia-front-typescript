@@ -1,6 +1,7 @@
 import styles from './HomePaleontology.module.scss'
 import Picture from "../picture/Picture";
-import ButtonSection from "../../../../components/button/button-section/ButtonSection";
+import {ButtonSection} from "../../../../components/index";
+import Scene from '../../../../components/scene/Scene';
 const HomePaleontology = () => {
   return(
     <section className={styles.home_paleontology}>
@@ -23,9 +24,15 @@ const HomePaleontology = () => {
             <div className={styles.circle}>
               <span></span>
             </div>
-            <Picture className={'right'}/>
-            <Picture className={'left'}/>
-            <Picture className={'bellow'}/>
+            <Picture className={'right'}>
+              <Scene/>
+            </Picture>
+            <Picture className={'left'}>
+              <Scene/>
+            </Picture>
+            <Picture className={'bellow'}>
+              <Scene/>
+            </Picture>
           </div>
         </div>
       </div>

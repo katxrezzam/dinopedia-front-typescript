@@ -26,8 +26,8 @@ const ComboBox = ({ value, options} : Props) => {
       {open &&
         <ul className={styles.options}>
           {options
-            ? (options.map(item => <li onClick={() => handleChange(item)}>{item}</li>))
-            : (<p>No opciones para mostrar</p>)
+            ? (options.map((item, index) => <li key={index} onClick={() => handleChange(item)}>{item}</li>))
+            : (<p>No hay opciones para mostrar</p>)
           }
         </ul>
       }
