@@ -1,5 +1,5 @@
 import styles from './DinoCard.module.scss'
-import dinoLogo from '../../../../assets/images/dino-ico.png'
+import dinoLogo from '../../assets/images/dino-ico.png'
 import {useState} from "react";
 const DinoCard = () => {
 

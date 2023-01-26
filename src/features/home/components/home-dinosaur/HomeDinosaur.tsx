@@ -1,5 +1,5 @@
 import styles from './HomeDinosaur.module.scss'
-import DinoCard from "../dino-card/DinoCard";
+import DinoCard from "../../../../components/dino-card/DinoCard";
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {ButtonSection} from "../../../../components/index";
